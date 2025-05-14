@@ -16,11 +16,11 @@ export default function Timer() {
     setHour(value.toString().padStart(2, "0"));
   };
   const decreaseHour = () => {
-    const value = Math.max(0, Math.min(23, parseInt(hour) || 0))-1;
+    const value = Math.max(0, Math.min(23, (parseInt(hour) -1) || 0));
     setHour(value.toString().padStart(2, "0"));
   };
   const inceraseHour = () => {
-    const value = Math.max(0, Math.min(23, parseInt(hour) || 0))+1;
+    const value = Math.max(0, Math.min(23, (parseInt(hour)+1) || 0));
     setHour(value.toString().padStart(2, "0"));
   };
 
@@ -29,11 +29,11 @@ export default function Timer() {
     setMinute(value.toString().padStart(2, "0"));
   };
   const decreaseMinute = () => {
-    const value = Math.max(0, Math.min(59, parseInt(minute) || 0))-1;
+    const value = Math.max(0, Math.min(59, (parseInt(minute)-1) || 0));
     setMinute(value.toString().padStart(2, "0"));
   };
   const inceraseMinute = () => {
-    const value = Math.max(0, Math.min(59, parseInt(minute) || 0))+1;
+    const value = Math.max(0, Math.min(59, (parseInt(minute)+1) || 0));
     setMinute(value.toString().padStart(2, "0"));
   };
 
@@ -42,11 +42,11 @@ export default function Timer() {
     setSecond(value.toString().padStart(2, "0"));
   };
   const decreaseSecond = () => {
-    const value = Math.max(0, Math.min(59, parseInt(second) || 0))-1;
+    const value = Math.max(0, Math.min(59, (parseInt(second)-1) || 0));
     setSecond(value.toString().padStart(2, "0"));
   };
   const inceraseSecond = () => {
-    const value = Math.max(0, Math.min(59, parseInt(second) || 0))+1;
+    const value = Math.max(0, Math.min(59, (parseInt(second)+1) || 0));
     setSecond(value.toString().padStart(2, "0"));
   };
 
