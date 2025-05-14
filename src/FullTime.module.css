@@ -1,0 +1,15 @@
+.time{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.time div{
+    font-size: 80px;
+    padding: 40px;
+    border: 2px solid slateblue;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
